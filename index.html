@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="bulma.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+   /* .ooo {
+        background-color: rgb(158, 21, 128) !important;
+    }*/
+    .oooo {
+        background-color: rgb(255, 0, 234) !important;
+    }
+    @media (max-width: 1023px) {
+  .lol {
+    display: none;
+  }
+}
+body {
+    overflow-x: hidden;
+    background-color: #081b29 !important;
+}
+.navbar {
+    background-color: transparent !important;
+}
+.end {
+    display: flex !important;
+    justify-content: center !important;
+}
+.navbar-menu p {
+    font-weight: 500;
+}
+.zzz:hover {
+    color: #00abf0 !important;
+}
+.sew p {
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #081b29;
+    opacity: 0.1; /* Adjust the opacity to change how much the color shows */
+    transition: opacity 0.5s ease; /* Smooth transition for the fading effect */
+}
+
+.zzz{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.front p {
+    color: #00abf0 !important;
+}
+.nmn {
+    color: #ededed !important;
+    font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.navbar-item p:hover {
+    color: #00abf0 !important;
+}
+.navbar-item:hover {
+    background-color: transparent !important;
+}
+.bbb a {
+     color: #ededed !important;
+}
+.bbb a::before {
+    content: '';
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+.loremq p {
+    color: #ededed !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 600 !important;
+}
+.ggt {
+    color: #00abf0 !important;
+}
+button {
+ --color: #00abf0;
+ font-family: inherit;
+ display: inline-block;
+ width: 80%;
+ height: 3.0em;
+ line-height: 2.5em;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 3px;
+ font-weight: 500;
+ color: var(--color);
+ transition: transform 0.1s ease;
+}
+
+button:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+button:hover {
+ color: #fff;
+}
+
+button:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+button:hover:before {
+ top: -60px;
+ left: -60px;
+}
+button:active {
+    transform: scale(0.9);
+}
+button:active:before {
+    transform: scale(0.96);
+    opacity: 0.4;
+ background: #081b29;
+ transition: background 0s;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    .sew {
+        margin-top: 0px !important;
+    }
+    .wew {
+        margin-left: 12px !important;
+    }
+    .tabb {
+        margin-top: 12px !important;
+    } 
+}
+@media (max-width: 768px) {
+    .wew {
+        display: none !important;
+    }
+    .mew {
+        width: 100% !important;
+    }
+    .sew {
+        margin-top: 0px !important;
+    }
+    .wwo {
+    padding-left: 4px !important;
+    }
+
+}
+@media (max-width: 768px) {
+    .bdd {
+        animation: none;
+        transition: none;
+        width: 100%;
+    }
+    .bdd:active {
+    background-color: #081b29; /* Change the background color when the button is clicked */
+}
+
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 9999;
+    animation: revealFromRight 1.5s ease forwards;
+}
+
+@keyframes revealFromRight {
+    0% {
+        transform: translateX(0); /* Start fully covering the content */
+    }
+    100% {
+        transform: translateX(100%); /* Move away from the content to the right */
+    }
+}
+
+
+/*img {
+    filter: blur(1px); 
+}*/
+</style>
+<body class="container">
+    <!--Navbar-->
+    <nav class="navbar ooo pl-2 mt-3 is-transparent">
+        <div class="navbar-brand is-transparent">
+            <div class="navbar-item wwo is-transparent">
+                <a href="" class="is-size-4 nmn has-text-bold">Daniel</a>
+            </div>
+            <a class="navbar-burger" id="burger">
+                <span class="oooo"></span>
+                <span class="oooo"></span>
+                <span class="oooo"></span>
+                <span class="oooo"></span>
+            </a>
+        </div>
+        <div class="navbar-menu bbb navbar-end mr-1 is-transparent" id="nav_links">
+            <a class="navbar-item mr-6">
+                <p class="ggt">Home</p>
+            </a>
+            <a href="#" id="start-animation" class="navbar-item mr-6">
+                <p>About</p>
+            </a>
+            <a href="https://github.com/Daniel999l/" class="navbar-item mr-6">
+                <p>Services</p>
+            </a>
+            <div class="navbar-item mr-6 has-dropdown is-hoverable">
+                <a href="https://wa.me/2347025298345
+                " class="navbar-link is-arrowless">
+                    <p>Contact</p>
+                </a>
+                <div class="navbar-dropdown lol">
+                    <a href="https://www.facebook.com/profile.php?id=100071170244411" class="zzz navbar-item">
+                        Facebook
+                      </a>
+                    <a href="https://wa.me/2347025298345
+                    " class="zzz navbar-item">
+                        Whatsapp
+                      </a>
+                    <a href="https://twitter.com/daifreenft" class="zzz navbar-item">
+                        Twitter
+                      </a>
+                    <hr class="navbar-divider">
+                    <a href="https://discord.com/users/daniel999l" class="zzz navbar-item">
+                        Report an issue
+                    </a>
+
+                </div>
+            </div>
+           
+        </div>
+        <!--<div class="navbar-end pr-5">
+            <div class="navbar-item">
+              <div class="buttons">
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div> -->
+    </nav>
+    <!--BreadCrumbs-->
+    <!-- Not really required-->
+    <!--
+    <nav class="breadcrumb ml-4 is-centered" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        </ul>
+      </nav>
+    -->
+    <!-- BODY-->
+    <section class="section content py-3 px-3 mt-3">
+        <div class="overlay"></div>
+        <div class="columns">
+            <div class="column sew pl-3-mobile is-6 mt-6">
+                <div class="sew mt-6">
+                    <p class="is-size-2 is-size-4-mobile is-size-3-tablet" style="
+                    margin-bottom: 0px !important;">Hi, I'm Ishola Daniel</p>
+                    <div class="front is-size-4 is-size-6-mobile pt-1">
+                        
+                            <p id="text-container"></p>   
+                    </div>
+                </div>
+                <div class="loremq mt-4">
+                    <p class="is-size-7-tablet is-size-7-mobile is-size-6-desktop" id="daniel">Front-End Web Developer with a flair for Arduino. Crafting seamless experiences, coding innovative solutions, and bringing visions to fruition.</p>
+                </div>
+                <div class="grid mt-6">
+                    <div class="cell is-col-min-6">
+                        <button class="bdd" onclick="redirectToExternalLink()">
+                           Hire Me
+                          </button>
+                    </div>
+                    <div class="cell is-col-min-6">
+                        <button class="bdd" onclick="redirectToExternalLink()">
+                            Let's Talk
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-6 mb-4 tabb container mt-6">
+                <div class="image-container">
+
+                    <img src="illustration.png" class=" wew ml-6" alt="test">
+
+                </div>
+                    
+            </div>
+        </div>
+    </section>
+    
+    
+      
+</body>
+<script src="index.js">
+</script>
+<script>
+    // Function to check screen size and display message
+function checkScreenSize() {
+    // Check if the screen width is less than 1024 pixels
+    if (window.innerWidth < 1024) {
+        // Display an informative alert message
+        alert("For an optimized viewing experience, we recommend using a screen width of 1024px or wider.");
+    }
+}
+
+// Call the function when the page loads
+window.onload = checkScreenSize;
+
+// Optionally, check again when the window is resized
+window.onresize = checkScreenSize;
+
+</script>
+<script>
+  function redirectToExternalLink() {
+    window.location.href = "https://wa.me/2347025298345"
+; // Replace "https://example.com" with your external link
+  }
+</script>
+<script>
+        
+        const texts = ["Arduino Expert", "Tech Enthusiast", "Hardware Hacker", "Front-End Developer"];
+
+const textDelay = 1000;  // Delay before typing next text
+const clearDelay = 1000; // Delay before starting to clear text
+const typeDelay = 100;   // Delay between typing characters
+const clearTypeDelay = 100; // Delay between clearing characters
+
+function typeTexts(texts) {
+  const container = document.getElementById("text-container");
+  let currentIndex = 0;
+
+  function typeLetter(text, index) {
+    if (index < text.length) {
+      container.textContent += text[index];
+      setTimeout(() => {
+        typeLetter(text, index + 1);
+      }, typeDelay);
+    } else {
+      // After finishing typing the last text, stop the clearing process
+      if (currentIndex < texts.length - 1) {
+        setTimeout(() => {
+          clearText();
+        }, clearDelay);
+      }
+    }
+  }
+
+  function clearText() {
+    let index = container.textContent.length;
+    const interval = setInterval(() => {
+      if (index > 0) {
+        container.textContent = container.textContent.substring(0, index - 1);
+        index--;
+      } else {
+        clearInterval(interval);
+        currentIndex++;
+        if (currentIndex < texts.length) {
+          setTimeout(() => {
+            typeLetter(texts[currentIndex], 0);
+          }, textDelay);
+        } else {
+          console.log("All texts have been displayed!");
+        }
+      }
+    }, clearTypeDelay);
+  }
+
+  typeLetter(texts[currentIndex], 0);
+}
+
+// Ensuring the DOM content is fully loaded before attempting to access the DOM element
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("text-container");
+  if (container) {
+    typeTexts(texts);
+  } else {
+    console.warn("Element with ID 'text-container' not found!");
+  }
+});
+
+</script>
+
+
+<script>
+    const text = document.getElementById("daniel").textContent;
+      const container = document.getElementById("daniel");
+      container.textContent = ""; // Clear initial text
+  
+      let index = 0;
+      const interval = setInterval(() => {
+          if (index < text.length) {
+              container.textContent += text[index];
+              index++;
+          } else {
+              clearInterval(interval);
+          }
+      }, 0.001); // Adjust the interval (in milliseconds) as needed
+  </script>
+  <script>
+      const animationTexts = [" ", "I transform concepts into reality through Arduino, merging code with hardware to create interactive and tangible innovations.", "I am a keen observer of tech evolution, fueled by my curiosity to understand and harness the power of emerging technologies.", "I delve into electronics' intricacies, pushing boundaries to engineer inventive solutions and unleash the full potential of hardware.", "Front-End Web Developer with a flair for Arduino. Crafting seamless experiences, coding innovative solutions, and bringing visions to fruition."];
+  
+  const animationTextDelay = 1000;  // Delay before typing next text
+  const animationClearDelay = 1000; // Delay before starting to clear text
+  const animationTypeDelay = 70;   // Delay between typing characters
+  const animationClearTypeDelay = 40; // Delay between clearing characters
+  
+  function typeAnimationTexts(animationTexts) {
+    const container = document.getElementById("daniel");
+    let currentIndex = 0;
+  
+    function typeLetter(text, index) {
+      if (index < text.length) {
+        container.textContent += text[index];
+        setTimeout(() => {
+          typeLetter(text, index + 1);
+        }, animationTypeDelay);
+      } else {
+        // After finishing typing the last text, stop the clearing process
+        if (currentIndex < animationTexts.length - 1) {
+          setTimeout(() => {
+            clearText();
+          }, animationClearDelay);
+        }
+      }
+    }
+  
+    function clearText() {
+      let index = container.textContent.length;
+      const interval = setInterval(() => {
+        if (index > 0) {
+          container.textContent = container.textContent.substring(0, index - 1);
+          index--;
+        } else {
+          clearInterval(interval);
+          currentIndex++;
+          if (currentIndex < animationTexts.length) {
+            setTimeout(() => {
+              typeLetter(animationTexts[currentIndex], 0);
+            }, animationTextDelay);
+          } else {
+            console.log("All texts have been displayed!");
+          }
+        }
+      }, animationClearTypeDelay);
+    }
+  
+    typeLetter(animationTexts[currentIndex], 0);
+  }
+  
+  // Event listener for button click
+  const button = document.getElementById("start-animation");
+  button.addEventListener("click", function() {
+      startAnimation();
+      typeAnimationTexts(animationTexts); // Start animation after the initial text animation
+  });
+  
+  // Function to start animation when button is clicked
+  function startAnimation() {
+    const container = document.getElementById("daniel");
+    if (container.textContent === "Click the button to start animation") {
+      container.textContent = ""; // Clear initial text
+    }
+  }
+  
+  </script>
+</script>
+</html>
