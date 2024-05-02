@@ -9902,7 +9902,7 @@ label.panel-block:hover {
 
 .grid {
   --bulma-grid-gap: 0.75rem;
-  --bulma-grid-column-min: 9rem;
+  /*--bulma-grid-column-min: 9rem;*/
   --bulma-grid-cell-column-span: 1;
   --bulma-grid-cell-row-span: 1;
   display: grid;
